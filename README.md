@@ -1,6 +1,6 @@
 # Physical AI Robotics Lv.1 — 과제 모음
 
-Lv.1 과제 체계(미니 퀴즈 · 실습 산출물 · 모듈 과제)와 모듈 과제 4개의 지시문, 발제 문서를 모아 둔 저장소입니다.
+Lv.1 과제 체계(미니 퀴즈 · 실습 산출물 · 모듈 과제)와 모듈 과제 4개의 지시문, 발제 문서, 연계 추가 문제를 모아 둔 저장소입니다.
 
 ## 문서 구성
 
@@ -12,6 +12,7 @@ Lv.1 과제 체계(미니 퀴즈 · 실습 산출물 · 모듈 과제)와 모듈
 | [과제2_turtlesim_ROS2패키지.md](과제2_turtlesim_ROS2패키지.md) | 모듈 ② 지시문 — C++ 빌드부터 QoS·launch·검증까지 (10문제) |
 | [과제3_좌표변환_수학라이브러리.md](과제3_좌표변환_수학라이브러리.md) | 모듈 ③ 지시문 — 벡터·회전·동차변환·좌표 체인 NumPy 구현 (6문제) |
 | [과제4_픽앤플레이스_자세추정.md](과제4_픽앤플레이스_자세추정.md) | 모듈 ④ 지시문 — 자세 추정·궤적 생성·시연 미니 프로젝트 (6문제) |
+| [추가문제_OpenManipulator-X_TF2_RViz2.md](추가문제_OpenManipulator-X_TF2_RViz2.md) | 연계 추가 문제 — 공식 OpenManipulator-X URDF, TF2 broadcaster/listener, RViz2 시각화 |
 
 ## 학생 템플릿 (복사해서 시작)
 
@@ -20,6 +21,7 @@ Lv.1 과제 체계(미니 퀴즈 · 실습 산출물 · 모듈 과제)와 모듈
 | `lv1_module2_student/` | 과제 ② 문제 5~9 예제 코드 (`turtle_interfaces`, `turtle_examples` 패키지, launch/params) — 주석으로 동작 원리 설명 |
 | `lv1_module3_student/` | 과제 ③ 노트북 6개(검증 셀·3D 그림 셀 제공, 구현은 TODO) + `src/`·`tests/` 뼈대 |
 | `lv1_module4_student/` | 과제 ④ 노트북 3개(검증 셀·3D 그림·애니메이션 셀 제공) + `src/`·`tests/` 뼈대, 발표 자료 템플릿 |
+| `lv1_tf2_rviz_student/` | OpenManipulator-X URDF wrapper + TF2 정적·동적 broadcaster·listener + RViz2·launch 참고 패키지와 보고서 템플릿 |
 
 ## 제출 방법
 

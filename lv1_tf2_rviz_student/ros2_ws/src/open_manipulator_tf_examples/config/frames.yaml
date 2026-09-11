@@ -1,0 +1,21 @@
+camera_static_broadcaster:
+  ros__parameters:
+    parent_frame: link5
+    child_frame: camera_link
+    xyz: [0.060, 0.000, 0.040]
+    rpy: [0.0, 0.523599, 0.0]
+
+detected_object_broadcaster:
+  ros__parameters:
+    parent_frame: camera_link
+    child_frame: detected_object
+    base_xyz: [0.180, 0.000, 0.050]
+    amplitude: 0.030
+    frequency: 0.20
+    publish_rate: 20.0
+
+object_marker:
+  ros__parameters:
+    fixed_frame: world
+    source_frame: detected_object
+    marker_topic: /detected_object_marker

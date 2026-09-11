@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot name="open_manipulator_x_tf_lab" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- ROBOTIS 공식 description 패키지의 재질과 OpenManipulator-X macro를 재사용합니다. -->
+  <xacro:include filename="$(find open_manipulator_x_description)/urdf/materials.xacro"/>
+  <xacro:include filename="$(find open_manipulator_x_description)/urdf/open_manipulator_x.urdf.xacro"/>
+
+  <xacro:open_manipulator_x prefix=""/>
+
+  <!-- RViz2의 고정 기준 좌표계. 실제 설치대가 움직인다면 별도 localization TF가 이 역할을 합니다. -->
+  <link name="world"/>
+  <joint name="world_fixed" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="world"/>
+    <child link="link1"/>
+  </joint>
+
+  <!-- TODO(student): camera_link와 detected_object는 URDF에 추가하지 않습니다.
+       두 프레임은 각각 static/dynamic TF broadcaster가 런타임에 발행해야 합니다. -->
+</robot>
